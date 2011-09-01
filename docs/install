@@ -15,7 +15,8 @@ case "${cmd}" in
         ;;
     --clean)
         make clean
-        rm -rf ../build/docs
+        rm -r ../build/docs
+        rm -r _build
         ;;
     --help)
         "Usage: ${0} [--build|--clean]"
